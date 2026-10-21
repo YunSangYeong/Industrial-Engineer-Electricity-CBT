@@ -1,0 +1,47 @@
+{
+  "name": "전기산업기사",
+  "slug": "industrial-engineer-electricity",
+  "rulesVerificationStatus": "verified",
+  "officialSources": [
+    {
+      "url": "https://www.q-net.or.kr/crf005.do?id=crf00503&jmCd=2140",
+      "status": "종목명·시행기관 확인"
+    },
+    {
+      "url": "https://www.q-net.or.kr/crf005.do?id=crf00503s02&jmCd=2140&jmInfoDivCcd=B0",
+      "status": "취득방법: 5과목·과목당20문항30분·4지선다·과목별40점·평균60점 직접 확인"
+    }
+  ],
+  "exam": {
+    "questionCount": 100,
+    "durationMinutes": 150,
+    "choiceCount": 4,
+    "questionsPerSubject": 20,
+    "subjects": [
+      "전기자기학",
+      "전력공학",
+      "전기기기",
+      "회로이론",
+      "전기설비기술기준"
+    ],
+    "scoring": {
+      "passScore": 60,
+      "subjectCutoff": 40,
+      "unansweredPolicy": "오답"
+    }
+  },
+  "storage": {
+    "namespace": "industrial-engineer-electricity-cbt:v1"
+  },
+  "questionBank": {
+    "targetReviewedCount": 1000,
+    "bankId": "main"
+  },
+  "deployment": {
+    "repository": "YunSangYeong/Industrial-Engineer-Electricity-CBT",
+    "basePath": "/Industrial-Engineer-Electricity-CBT/",
+    "executedBy": "user",
+    "trigger": "workflow_dispatch"
+  },
+  "verifiedAt": "2026-10-21"
+}

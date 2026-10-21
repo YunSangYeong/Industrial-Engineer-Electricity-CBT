@@ -1,0 +1,25 @@
+[
+  {
+    "id": "LOCAL-TEMPLATE-001",
+    "subject": "전기자기학",
+    "topic": "전계와 힘",
+    "question": "전계 500 N/C에 놓인 양전하 20 μC에 작용하는 힘의 크기는 몇 mN인가?",
+    "choices": [
+      "10 mN",
+      "20 mN",
+      "30 mN",
+      "40 mN"
+    ],
+    "answer": 1,
+    "explanation": "F=qE=20×10⁻⁶×500=0.01 N=10 mN.",
+    "difficulty": "중",
+    "year": null,
+    "session": null,
+    "type": "original",
+    "sourceUrl": "https://github.com/YunSangYeong/Industrial-Engineer-Electricity-CBT/blob/codex/electricity-cbt-20261021/docs/question-review.md",
+    "verificationStatus": "pending",
+    "reviewNote": "양식 예제. 직접 근거를 확인한 뒤 로컬 승인하세요.",
+    "version": "main",
+    "rights": "CC BY 4.0 · Industrial-Engineer-Electricity-CBT contributors · AI 보조 자체 제작"
+  }
+]
