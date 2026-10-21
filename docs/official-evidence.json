@@ -1,0 +1,21 @@
+{
+  "fetchedAt": "2026-10-21",
+  "source": "https://www.q-net.or.kr/crf005.do?id=crf00503s02&gSite=Q&gId=&jmCd=2140&jmInfoDivCcd=B0&jmNm=%EC%A0%84%EA%B8%B0%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC&seriesCd=03",
+  "httpStatus": 200,
+  "responseSha256": "a4b44ee39979ab3c5c72976209796cc1213c0a1100fb73691bbf1b88ca3baab9",
+  "verifiedFields": [
+    "qualification",
+    "issuer",
+    "subjects",
+    "questionCount",
+    "duration",
+    "choiceCount",
+    "passScore",
+    "subjectCutoff"
+  ],
+  "notVerified": [
+    "detailed syllabus mapping",
+    "past-question redistribution permissions",
+    "current KEC legal values"
+  ]
+}
