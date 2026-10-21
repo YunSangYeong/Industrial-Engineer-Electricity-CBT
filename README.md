@@ -67,7 +67,7 @@ npm run test:e2e
 PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/usr/bin/chromium npm run test:e2e
 ```
 
-문항 원고의 재생성은 `python scripts/generate_bank.py`입니다. 결정적 입력·순서·고정 ID로 동일한 JSON을 생성합니다. 생성 코드와 다른 TypeScript 식으로 재검산하며 테스트는 바이트 단위 재현도 확인합니다. Python 3은 재생성 검사에 필요합니다. 자세한 결과는 [검증 기록](docs/validation.md)에 있습니다.
+문항 원고의 재생성은 `python scripts/generate_bank.py`입니다. 결정적 입력·순서·고정 ID로 동일한 JSON을 생성합니다. 생성 코드와 다른 TypeScript 식으로 재검산하며 테스트는 바이트 단위 재현도 확인합니다. Python 3은 재생성 검사에 필요합니다. 앱 커밋 `8c65bc6`의 [배포 없는 GitHub CI](https://github.com/YunSangYeong/Industrial-Engineer-Electricity-CBT/actions/runs/39538039191)도 성공했습니다. 자세한 결과는 [검증 기록](docs/validation.md)에 있습니다.
 
 ## 기록 보관과 가져오기
 

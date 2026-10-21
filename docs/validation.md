@@ -14,7 +14,7 @@
 | 기출 원문·정답·재배포 권한 확보 | 미완료, 기출·복원 각각 0 |
 | 문제 전문가 검수·세부 출제기준 대조 | 미실시 |
 | 실기기·Safari·Firefox | 미실행 |
-| 원격 CI 결과 | GitHub API CONNECT 403으로 조회 차단. 로컬 결과와 구별하며 성공으로 주장하지 않음 |
+| 원격 CI 결과 | 앱 커밋 `8c65bc6b9215446a77a6739b3ee7f28274e600f0`의 Validate CBT 성공. [실행 39538039191](https://github.com/YunSangYeong/Industrial-Engineer-Electricity-CBT/actions/runs/39538039191), validate job 1분 21초. API는 CONNECT 403이었으나 GitHub 웹의 읽기 전용 조회로 성공을 확인 |
 | Pages 활성화·설정 변경·배포·재배포 | 에이전트 미실행 |
 | 공개 사이트·실제 블로그 iframe | 사용자 배포 후 확인 |
 
@@ -31,3 +31,7 @@ PC와 Pixel 7은 `/usr/bin/chromium`을 사용한 **브라우저 에뮬레이션
 초기 npm 설치는 기본 캐시 경로(`/home/agent/.npm`)가 쓰기 허용 범위 밖이어서 실패했다. `/tmp` 캐시로 수정 후 checksum/TLS 검증을 유지한 `npm ci`가 성공했다. 설치 무결성 검증을 끄거나 lockfile의 체크섬을 바꾸지 않았다.
 
 최종 결과를 적용한 커밋은 저장소 Git 이력과 인계 메시지에서 확인한다. 원본 프로젝트의 테스트 수나 배포 성공 기록을 이 프로젝트의 증거로 쓰지 않는다.
+
+최종 브라우저 검사 환경: Chromium 154.0.8037.57, Node 24.19.0, npm 11.9.0, Python 3.12.14. 프로덕션 JS는 1,430.03 kB( gzip 130.66 kB)이며 기본 은행 전체를 포함하여 Vite의 500 kB chunk 경고가 발생한다. 빌드는 성공했으나 향후 데이터 지연 로딩·분할과 실제 저사양 기기 성능 검토가 필요하다. 경고 한도를 높여 숨기지 않았다.
+
+원격 검증은 배포 없는 `ci.yml` 한 개의 validate job에서 수행되었고 Pages workflow를 실행하지 않았다. 후속 인계 문서 커밋은 `[skip ci]`로 중복 CI를 생략하며 앱 코드·문항·lockfile은 위 검증 커밋과 같다.
